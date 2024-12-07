@@ -20,6 +20,7 @@ public class NetworkInfo extends com.alphawallet.ethereum.NetworkInfo
     private final String OKX_API = "oklink";
     private final String ARBISCAN_API = "https://api.arbiscan";
     private final String PALM_API = "explorer.palm";
+    private final String RUPAYA_API = "scan.rupaya.io";
 
     public  String backupNodeUrl = null;
     public  String etherscanAPI = null; //This is used by the API call to fetch transactions
@@ -64,6 +65,10 @@ public class NetworkInfo extends com.alphawallet.ethereum.NetworkInfo
         if (etherscanAPI.contains(COVALENT) || TextUtils.isEmpty(etherscanAPI))
         {
             return new TransferFetchType[0];
+        }
+        else if (etherscanAPI.contains(RUPAYA_API))
+        {
+            return new TransferFetchType[]{TransferFetchType.ERC_20, TransferFetchType.ERC_721, TransferFetchType.ERC_1155};
         }
         else if (chainId == GOERLI_ID || etherscanAPI.startsWith(ARBISCAN_API))
         {

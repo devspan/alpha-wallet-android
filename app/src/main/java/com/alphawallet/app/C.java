@@ -100,6 +100,7 @@ public abstract class C {
     public static final String ROOTSTOCK_SYMBOL = "RBTC";
     public static final String ROOTSTOCK_TEST_SYMBOL = "tBTC";
     public static final String HOLESKY_TEST_SYMBOL = "Hol" + ETH_SYMBOL;
+    public static final String RUPAYA_SYMBOL = "RUPX";
 
     public static final String AMOY_TESTNET_SYMBOL = "Am" + ETH_SYMBOL;
 
@@ -340,4 +341,6 @@ public abstract class C {
 
     // shortcuts
     public static final String ACTION_TOKEN_SHORTCUT = "token_shortcut";
+
+    public static final String RUPAYA_NETWORK = "Rupaya";
 }

@@ -72,4 +72,6 @@
     <color name="dark_mode_icon_background_compensate">@color/transparent</color>
     <color name="dark_mode_token_icon_background_compensate">@color/transparent</color>
     <color name="surface_search">@color/white</color>
+    <color name="mantle">#33FF99</color>
+    <color name="rupaya">#2196F3</color>
 </resources>

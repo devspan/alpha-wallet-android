@@ -10,7 +10,7 @@ public class EthRPCNodes
     private static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
     private static final String XDAI_RPC_URL = EthereumNetworkBase.XDAI_RPC_URL;
     private static final String GOERLI_RPC_URL = "https://goerli.infura.io/v3/" + getInfuraKey();
-
+    private static final String RUPAYA_RPC_URL = EthereumNetworkBase.RUPAYA_RPC_URL;
 
     public static String getNodeURLByNetworkId(long networkId) {
         switch ((int)networkId) {
@@ -22,6 +22,8 @@ public class EthRPCNodes
                 return XDAI_RPC_URL;
             case (int)EthereumNetworkBase.GOERLI_ID:
                 return GOERLI_RPC_URL;
+            case (int)EthereumNetworkBase.RUPAYA_ID:
+                return RUPAYA_RPC_URL;
             default:
                 return MAINNET_RPC_URL;
         }
