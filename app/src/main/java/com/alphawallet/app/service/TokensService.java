@@ -443,6 +443,7 @@ public class TokensService
         }
         else
         {
+            networkFilter.add(EthereumNetworkBase.RUPAYA_ID);
             networkFilter.addAll(ethereumNetworkRepository.getFilterNetworkList());
         }
 

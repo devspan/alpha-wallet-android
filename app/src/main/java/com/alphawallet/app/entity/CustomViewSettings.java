@@ -16,11 +16,12 @@ import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.RUPAYA_ID;
 
 public class CustomViewSettings
 {
-    public static final long primaryChain = MAINNET_ID;
-    private static final String primaryChainName = C.ETHEREUM_NETWORK_NAME;
+    public static final long primaryChain = RUPAYA_ID;
+    private static final String primaryChainName = "Rupaya";
 
     //You can use the settings in this file to customise the wallet appearance
 
@@ -41,13 +42,10 @@ public class CustomViewSettings
     //If blank, enable the user filter select dialog, if there are any entries here, the select network dialog is disabled
     //Note: you should always enable the chainId corresponding to the chainIDs in the lockedTokens.
     private static final List<Long> lockedChains = Arrays.asList(
-            //EthereumNetworkBase.MAINNET_ID //EG only show Main, xdai, classic and two testnets. Don't allow user to select any others
-            //EthereumNetworkBase.XDAI_ID,
-            //EthereumNetworkBase.GOERLI_ID //You can mix testnets and mainnets, but probably shouldn't as it may result in people getting scammed
+            EthereumNetworkBase.RUPAYA_ID
     );
 
     public static final List<Long> alwaysVisibleChains = Arrays.asList(
-            EthereumNetworkBase.MAINNET_ID,
             EthereumNetworkBase.RUPAYA_ID
     );
 
